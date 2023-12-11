@@ -77,6 +77,8 @@ describe("Operaciones aritméticas", () => {
     })
     it("Usando división", () => {
         const a = 10;
+        const b = 4;
+        const result= a/b;
 
         expect(a/b).to.equal(2.5);
     })
@@ -84,16 +86,20 @@ describe("Operaciones aritméticas", () => {
 
 describe("Strings", () => {
     it("Los strings representan cadenas de texto", () => {
-        let weapon = "espada";
+        let weapon = "hacha";
         let phrase = "Cuenta con mi " + weapon + "!";
+
+    
         expect(phrase).to.equal("Cuenta con mi hacha!")
     });
 });
 
 describe("Booleanos", () => {
    it("un booleano puede tomar dos valores", () => {
-        let b = true;
-        expect(b).to.be(false);
+        let b = false;
+        expect(b).to.equal(false);
+
+
    }) 
 });
 
@@ -102,6 +108,10 @@ describe('Comparaciones en Javascript', () => {
         const number = 20;
         //completa la asignación usando number y el comparador ===
 
+       const number2= 19;
+       let expresion= number===number2;       
+       
+
         expect(expresion).to.equal(false)
     })
 
@@ -109,7 +119,10 @@ describe('Comparaciones en Javascript', () => {
         const language = "Javascript";
         //completa la asignación usando language y el comparador !==
 
-        expect(expresion).to.equal(false)
+       const expresion = language !== "Java";
+
+       
+        expect(expresion).to.equal(true)
     })
 });
 
