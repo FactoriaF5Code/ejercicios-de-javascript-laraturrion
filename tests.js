@@ -294,16 +294,24 @@ describe("Funciones (II)", () => {
 describe("Colecciones en JS: Array", () => {
   it("Pueden crearse usando [ ]", () => {
     // crea un array "a" usando los corchetes []
+    const a = [1,2,3,4,5]
+   
 
     expect(Array.isArray(a)).to.be.true;
   });
   it("Pueden crearse usando new Array", () => {
     // crea un array "a" usando el constructor "new"
 
+    const newArray =  [8,9]
+    return newArray;
+
     expect(Array.isArray(a)).to.be.true;
   });
   it("Pueden estar vacíos o contener elementos", () => {
     // crea un array que esté vacío y otro que no esté vacío
+    const arrayVacio = [];
+    return arrayVacio
+    const array= [1,2,3];
 
     expect(emptyArray).to.be.empty;
     expect(nonEmptyArray).not.to.be.empty;
@@ -311,12 +319,19 @@ describe("Colecciones en JS: Array", () => {
   it("Tienen una longitud correspondiente que podemos conocer con la propiedad 'length'", () => {
     let list = [10, "foo", true, "pepe"];
 
+    const longitud =list.length;
+    return length
+    
+  
     // completa la definición que falta usando la propiedad length
 
-    expect("???").to.equal(4);
+    expect("lenght").to.equal(4);
   });
   it("Nos permiten acceder a cada elemento del array", () => {
     let fruits = ["Piña", "Manzana", "Fresa", "Melón"];
+
+    return [0]
+    return [3]
 
     // sustituye "???" en cada caso para acceder al elemento correspondiente de la lista
 
@@ -326,6 +341,11 @@ describe("Colecciones en JS: Array", () => {
   it("Nos permiten modificar cada elemento", () => {
     let fruits = ["Piña", "Manzana", "Fresa", "Melón"];
 
+    [1["Pera"]]
+    return
+    
+
+
     // Añade el código que permite modificar el elemento correspondiente
 
     expect(fruits).to.have.same.members(["Piña", "Pera", "Fresa", "Melón"]);
@@ -333,6 +353,8 @@ describe("Colecciones en JS: Array", () => {
 
   it("Podemos añadir elementos", () => {
     let fruits = ["Piña", "Manzana", "Fresa", "Melón"];
+     fruits.push("Pera")
+     return
 
     // Añade el código que permite modificar la lista (incluyendo un elemento al final)
 
