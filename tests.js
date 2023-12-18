@@ -283,8 +283,8 @@ describe("Funciones (II)", () => {
       }
     }
     // substituye "???" por el resultado en cada caso
-    expect(h("khaleesi mother of dragons breaker of chains") === "very long").to.be
-      .true;
+    expect(h("khaleesi mother of dragons breaker of chains") === "very long").to
+      .be.true;
     expect(h("sarah") === "adecquate").to.be.true;
     expect(h("bob") === "too short").to.be.true;
     expect(h("robertson") === "long").to.be.true;
@@ -294,15 +294,14 @@ describe("Funciones (II)", () => {
 describe("Colecciones en JS: Array", () => {
   it("Pueden crearse usando [ ]", () => {
     // crea un array "a" usando los corchetes []
-    const a = [1,2,3,4,5]
-   
+    const a = [1, 2, 3, 4, 5];
 
     expect(Array.isArray(a)).to.be.true;
   });
   it("Pueden crearse usando new Array", () => {
     // crea un array "a" usando el constructor "new"
 
-    const newArray =  [8,9]
+    const newArray = [8, 9];
     return newArray;
 
     expect(Array.isArray(a)).to.be.true;
@@ -310,8 +309,8 @@ describe("Colecciones en JS: Array", () => {
   it("Pueden estar vacíos o contener elementos", () => {
     // crea un array que esté vacío y otro que no esté vacío
     const arrayVacio = [];
-    return arrayVacio
-    const array= [1,2,3];
+    return arrayVacio;
+    const array = [1, 2, 3];
 
     expect(emptyArray).to.be.empty;
     expect(nonEmptyArray).not.to.be.empty;
@@ -319,10 +318,9 @@ describe("Colecciones en JS: Array", () => {
   it("Tienen una longitud correspondiente que podemos conocer con la propiedad 'length'", () => {
     let list = [10, "foo", true, "pepe"];
 
-    const longitud =list.length;
-    return length
-    
-  
+    const longitud = list.length;
+    return length;
+
     // completa la definición que falta usando la propiedad length
 
     expect("lenght").to.equal(4);
@@ -330,8 +328,8 @@ describe("Colecciones en JS: Array", () => {
   it("Nos permiten acceder a cada elemento del array", () => {
     let fruits = ["Piña", "Manzana", "Fresa", "Melón"];
 
-    return [0]
-    return [3]
+    return [0];
+    return [3];
 
     // sustituye "???" en cada caso para acceder al elemento correspondiente de la lista
 
@@ -341,10 +339,8 @@ describe("Colecciones en JS: Array", () => {
   it("Nos permiten modificar cada elemento", () => {
     let fruits = ["Piña", "Manzana", "Fresa", "Melón"];
 
-    [1["Pera"]]
-    return
-    
-
+    [(1)["Pera"]];
+    return;
 
     // Añade el código que permite modificar el elemento correspondiente
 
@@ -353,8 +349,8 @@ describe("Colecciones en JS: Array", () => {
 
   it("Podemos añadir elementos", () => {
     let fruits = ["Piña", "Manzana", "Fresa", "Melón"];
-     fruits.push("Pera")
-     return
+    fruits.push("Pera");
+    return;
 
     // Añade el código que permite modificar la lista (incluyendo un elemento al final)
 
@@ -452,14 +448,19 @@ describe("Operaciones iterables", () => {
   it("map nos permite realizar operaciones elemento a elemento", () => {
     let list = [1, 5, 7, 9, 11, 13];
 
+    function restarporUno(num) {
+      return num - 1;
+    }
+
     // utiliza la función map para aplicar los números de la lista
-    list = "???";
+    list = list.map(restarporUno);
 
     expect(list).to.have.same.members([0, 4, 6, 8, 10, 12]);
   });
 
   it("map nos permite realizar operaciones elemento a elemento (2)", () => {
     let list = ["Pikachu", "Charmander", "Magikarp"];
+    let result = list.map((nombre) => `${nombre}, te elijo a ti!`);
 
     // utiliza la función map para aplicar los números de la lista y guardar la nueva lista en result
 
@@ -493,7 +494,7 @@ describe("Operaciones iterables", () => {
     ];
 
     // utiliza la función includes para comprobar si la lista de planetas contiene el planeta TOI-1634 b
-    let result = "???";
+    let result = knownExoplanets.includes("TOI-1634 b");
 
     expect(result).to.equal(true);
   });
@@ -523,7 +524,7 @@ describe("Operaciones iterables", () => {
     // utiliza la función filter para quedarnos con los planetas que terminan por la letra c
     // puedes utilizar la función .endsWith para comprobar si un string termina por una letra
     // p.ej. "Hola".endsWith('a') devuelve true
-    let result = "???";
+    let result = knownExoplanets.filter(planet=> planet.endsWith('c'));
 
     // todos los planetas de result terminan con la letra c
     expect(result.every((p) => p.endsWith("c"))).to.equal(true);
