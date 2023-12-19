@@ -319,11 +319,11 @@ describe("Colecciones en JS: Array", () => {
     let list = [10, "foo", true, "pepe"];
 
     const longitud = list.length;
-    return length;
+    return list.length;
 
     // completa la definición que falta usando la propiedad length
 
-    expect("lenght").to.equal(4);
+    expect("longitud").to.equal(4);
   });
   it("Nos permiten acceder a cada elemento del array", () => {
     let fruits = ["Piña", "Manzana", "Fresa", "Melón"];
